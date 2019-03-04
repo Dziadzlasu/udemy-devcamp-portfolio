@@ -6,7 +6,7 @@
     <%= form.text_field :title %>
   </div>
 
-    <div class="field">
+  <div class="field">
     <%= form.label :subtitle %>
     <%= form.text_field :subtitle %>
   </div>
@@ -15,6 +15,15 @@
     <%= form.label :body %>
     <%= form.text_area :body %>
   </div>
+
+  <ul>
+    <%= form.fields_for :technologies do |t| %>
+    <li>
+      <%= t.label :name %>
+      <%= t.text_field :name %>
+    </li>
+    <% end %>
+  </ul>
 
   <div class="actions">
     <%= form.submit %>
