@@ -51,6 +51,8 @@ group :development, :test do
   gem 'solargraph'
   gem 'pry'
   gem 'pry-byebug'
+  gem 'rubocop'
+  gem 'rubocop-performance'
 end
 
 group :development do
