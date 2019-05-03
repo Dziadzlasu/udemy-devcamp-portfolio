@@ -1,2 +1,19 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<h1>Would you like to hire me?</h1>
+
+<hr>
+
+<div class='row'>
+  <div class='col-md-6'>
+    <h3>Address</h3>
+    <p>Living in Warsaw.</p>
+    <h3>Phone</h3>
+    <p><%= number_to_phone(600000000, country_code: 48, pattern: /(\d{3})(\d{3})(\d{3})$/) %>
+    <h3>Email</h3>
+    <p><a href= 'mailto:example@example.com?subject=PortfolioContact' 'Write to me'>Write to me</a></p>
+  </div>
+
+  <div class='col-md-6'>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d312779.9432129802!2d20.781011801455314!3d52.23260627743799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarsaw!5e0!3m2!1sen!2spl!4v1554726555148!5m2!1sen!2spl" width="450" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
+
